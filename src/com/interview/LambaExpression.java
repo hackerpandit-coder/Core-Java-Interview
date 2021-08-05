@@ -20,6 +20,9 @@ public class LambaExpression {
 
 	    List<String> list2 = list.stream().filter(s -> s.contains("a")).collect(Collectors.toList());
 	    System.out.println(list2);
+	    for(String s : list2) {
+	    	System.out.println(s);
+	    }
 	}
 
 }

@@ -8,6 +8,7 @@ public class NoOfOccurance {
 		int count = 0;
 		//By Java 1.8
 		long codePoint = str.codePoints().filter(ch -> ch == 'a').count();
+		
 		System.out.println("count :"+codePoint);
 		
 		//By Normal Java Code Using For loop
@@ -16,7 +17,6 @@ public class NoOfOccurance {
 				count++;
 			}
 		}
-        System.out.println("count of a :"+count);
+        System.out.println("count of a :"+count);   
 	}
-
 }

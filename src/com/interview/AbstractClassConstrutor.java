@@ -14,7 +14,7 @@ abstract class Bacchi{
 
 public class AbstractClassConstrutor extends Bacchi{
 	
-	 AbstractClassConstrutor() {
+	AbstractClassConstrutor() {
 		
 		super("Virendra");
 		System.out.println("Default constructor......");

@@ -3,6 +3,8 @@ package com.interview;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class ArrayIntoArrayList {
 
@@ -10,6 +12,9 @@ public class ArrayIntoArrayList {
 		
 		//Create Array
 		int[] a = {1,2,3,4,5,6,7,8,9};
+		
+		List<Integer> list = IntStream.of(a).boxed().collect(Collectors.toList());
+		System.out.println(list);
 		
 		//Convert array into arrayList
 		String[] s = {"Ramesh","Mahesh","Sittu","Amar","Govind","Bandana","Yuvraj","Sanjay"};

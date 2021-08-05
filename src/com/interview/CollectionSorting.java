@@ -44,7 +44,6 @@ public class CollectionSorting {
 		
 		System.out.println(list1); //[57, 10, 5, 4, 1]
 		
-
 	}
 
 }

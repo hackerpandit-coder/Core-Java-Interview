@@ -1,7 +1,5 @@
 package com.interview;
 
-
-
 public class DefaultAndParametrizeConstructor {
 
 	public static void main(String[] args) {

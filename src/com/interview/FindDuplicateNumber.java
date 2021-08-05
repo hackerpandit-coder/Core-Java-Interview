@@ -15,7 +15,7 @@ public class FindDuplicateNumber {
 		HashMap<Integer, Integer> hashMap = new HashMap<>();
 		for(int value : arr) {
 			if(hashMap.containsKey(value)) {
-				hashMap.put(value, hashMap.get(value)+1);	
+				hashMap.put(value, hashMap.get(value)+1);
 			}
 			else {
 				hashMap.put(value, 1);

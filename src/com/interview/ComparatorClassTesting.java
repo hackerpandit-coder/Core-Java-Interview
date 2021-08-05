@@ -14,23 +14,59 @@ public class ComparatorClassTesting {
 		list.add(new LaptopEntity(002, "Dell", 3, 21000));
 		list.add(new LaptopEntity(003, "Lenovo", 6, 48000));
 		
-		
-		
 		Comparator<LaptopEntity> comparator = new Comparator<LaptopEntity>() {
 
 			@Override
 			public int compare(LaptopEntity o1, LaptopEntity o2) {
 				// TODO Auto-generated method stub
 				if(o1.getRam() < o2.getRam())
+					return -1;
+				else
+					return 1;
+			}
+		};
+		
+		Comparator<LaptopEntity> comparatorPrice = new Comparator<LaptopEntity>() {
+
+			@Override
+			public int compare(LaptopEntity o1, LaptopEntity o2) {
+				// TODO Auto-generated method stub
+				if(o1.getPrice() > o2.getPrice())
 					return - 1;
 				else
 					return 1;
 			}
 		};
 		
-		Collections.sort(list, comparator);
+		//For Multiple element sorting write this logic otherwise use java 8
+//		@Override
+//		public int compare(Customer cust1, Customer cust2) {
+//
+//			// all comparison
+//			int compareName = cust1.getCustName()
+//					.compareTo(cust2.getCustName());
+//			int compareCity = cust1.getCustCity()
+//					.compareTo(cust2.getCustCity());
+//			int compareAge = cust1.getCustAge()
+//					.compareTo(cust2.getCustAge());
+//
+//			// 3-level comparison using if-else block
+//			if(compareName == 0) {
+//				return ((compareCity == 0) ? compareAge : compareCity);
+//			}
+//			else {
+//				return compareName;
+//			}
+//		}
+		
+		//Collections.sort(list, comparator);
+		Collections.sort(list, Comparator.comparing(LaptopEntity::getPrice).thenComparing(LaptopEntity::getRam));  //Using Java 1.8
 		
 		System.out.println("Assending List : "+list);
+		
+		Collections.reverse(list);
+		
+		System.out.println("Desending List : "+list);
 		
 		for(LaptopEntity laptopEntity : list) {
 			System.out.println("Id :"+laptopEntity.getId()+"Name :"+laptopEntity.getName()+" Ram :"+laptopEntity.getRam()+" Price :"+laptopEntity.getPrice());
@@ -85,6 +121,4 @@ class LaptopEntity{
 	public String toString() {
 		return "LaptopModel [id=" + id + ", name=" + name + ", ram=" + ram + ", price=" + price + "]";
 	}
-	
-	
 }

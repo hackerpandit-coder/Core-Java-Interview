@@ -17,7 +17,6 @@ public class CheckPalindromeOrNot {
 		if(reverse.equalsIgnoreCase(original))
 			System.out.println(original+": the given value is palindrome");
 		else
-			System.out.println(original+": the given no is not palindrome");
+			System.out.println(original+": the given value is not palindrome");
 	}
-
 }

@@ -18,7 +18,7 @@ package com.interview;
 
  class MethodOverridding {
 public static void main(String[] args) {
-	A a = new A();
+	A a = new B();
 	a.m1();
 }
 	
