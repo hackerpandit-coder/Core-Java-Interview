@@ -36,8 +36,6 @@ public class FindDuplicateString {
 		//For Print List value
 		for(Map.Entry<String, Integer> mapList : map.entrySet()) {
 			System.out.println(mapList.getKey()+":"+mapList.getValue());
-		}
-				
+		}			
 	}
-
 }

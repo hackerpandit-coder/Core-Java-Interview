@@ -14,6 +14,7 @@ public class ArrayIntoArrayList {
 		int[] a = {1,2,3,4,5,6,7,8,9};
 		
 		List<Integer> list = IntStream.of(a).boxed().collect(Collectors.toList());
+		
 		System.out.println(list);
 		
 		//Convert array into arrayList
@@ -32,8 +33,6 @@ public class ArrayIntoArrayList {
 		for(String ar: arr) {
 			System.out.println(ar+":"+index);
 			index++;
-		}
-		
+		}	
 	}
-
 }

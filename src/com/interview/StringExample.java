@@ -8,13 +8,19 @@ public class StringExample {
 		String s2 = new String("RAHUL");
 		String s3 = "Rahul";
 		String s4 = new String("Rahul");
+		Integer i1 = 20;
+		Integer i2 = 20;
+		
+		System.out.println(i1 == i2); // true
+		
+		System.out.println("--------------::::::::::::::::::::::::::::::::::::::::::");
 		
 		System.out.println(s1.equals(s3)); // True
 		System.out.println(s1 == s3);      // True
 		System.out.println(s1.equals(s2)); // False
 		System.out.println(s1.equalsIgnoreCase(s2)); //True
 		System.out.println(s1.equals(s4)); // True
-		System.out.println(s2 == s4);  // True
+		System.out.println(s2 == s4);  // False
 		System.out.println(s2.equalsIgnoreCase(s4));  //True
 		
 
@@ -42,6 +48,5 @@ public class StringExample {
 		System.out.println(stringBuilder == stringBuiilder1);   // False
 		System.out.println(stringBuilder.equals(stringBuiilder1)); //False
 		
-	}
-
+	}	
 }

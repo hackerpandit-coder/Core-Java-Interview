@@ -23,7 +23,5 @@ public class EachCharacterOccurance {
 		for(Map.Entry<Character, Integer> list : map.entrySet()) {
 			System.out.println(list.getKey()+":"+list.getValue());
 		}
-
 	}
-
 }

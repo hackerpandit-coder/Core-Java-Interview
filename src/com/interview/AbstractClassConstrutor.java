@@ -7,10 +7,8 @@ abstract class Bacchi{
     Bacchi(String s) {
     	System.out.println("Abstact class construtor...."+s);
     	this.s=s;
-		
 	}
 }
-
 
 public class AbstractClassConstrutor extends Bacchi{
 	
@@ -24,5 +22,4 @@ public class AbstractClassConstrutor extends Bacchi{
 
 		AbstractClassConstrutor ac = new AbstractClassConstrutor();
 	}
-
 }

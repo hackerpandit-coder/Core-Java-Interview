@@ -1,13 +1,19 @@
 package com.interview;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class FindLargestNumberUsingJava8 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 		int arr[] = {1,25,45,23,75,26,35,62,95,28};
+		
+		List<Integer> list = IntStream.of(arr).boxed().collect(Collectors.toList());
+		
+		System.out.println("List :"+list);
 		
 		int size = arr.length;
 		

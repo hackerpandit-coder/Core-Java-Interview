@@ -16,13 +16,11 @@ public class Singaltan {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		Singaltan singletan = new Singaltan();
-		System.out.println("OBJ1 :" +singletan.getInstance());
-		System.out.println("OBJ2 :" +singletan.getInstance());
-		System.out.println("OBJ3 :" +singletan.getInstance());
-		System.out.println("OBJ4 :" +singletan.getInstance());
+		// TODO Auto-generated met
+		System.out.println("OBJ1 :" +getInstance());
+		System.out.println("OBJ2 :" +getInstance());
+		System.out.println("OBJ3 :" +getInstance());
+		System.out.println("OBJ4 :" +getInstance());
 	}
 
 }

@@ -18,7 +18,6 @@ public Address(String city, String state, String country) {
     this.state = state;  
     this.country = country;  
 }  
-  
 }
 
 public class AggregationExample {

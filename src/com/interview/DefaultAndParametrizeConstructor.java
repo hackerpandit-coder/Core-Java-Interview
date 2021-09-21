@@ -6,9 +6,7 @@ public class DefaultAndParametrizeConstructor {
 		// TODO Auto-generated method stub
 		
 		Aai a = new Babu();
-
 	}
-
 }
 
 class Aai{
@@ -33,5 +31,3 @@ class Babu extends Aai{
  *But if there is paramaterised construtor in the class and No default construtor then
  * Abc a = new Abc();  will give error this time u to have manually provide default constructor
  * */
-	
-

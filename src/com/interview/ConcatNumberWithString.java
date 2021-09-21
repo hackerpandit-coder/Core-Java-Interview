@@ -12,9 +12,6 @@ public class ConcatNumberWithString {
 		StringBuilder sb = new StringBuilder(s);
 		sb.reverse();
 		System.out.println(sb);  // ardneriV
-		
-		
-
 	}
 
 }

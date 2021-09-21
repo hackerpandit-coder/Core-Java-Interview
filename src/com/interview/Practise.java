@@ -2,10 +2,8 @@ package com.interview;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 class Employee{
 	
@@ -69,6 +67,7 @@ public class Practise {
 		map.put(new Employee(4, "Ashish", "35"), "one");
 		map.put(new Employee(5, "Anand", "28"), "four");
 		map.put(new Employee(6, "Alok", "36"), "five");
+		map.put(new Employee(7, "Anand","28"), "six");
 		
 		//Start with A : [Employee [empId=2, empName=Ankit, age=18], Employee [empId=6, empName=Alok, age=36], Employee [empId=5, empName=Anand, age=28]]
 		List<Employee> emp = map.keySet().stream().filter(value -> value.empName.startsWith("A")).limit(3).collect(Collectors.toList());
@@ -79,9 +78,17 @@ public class Practise {
 			System.out.println("Emploee name start with A :"+list.empName);
 		}
 		
+		//Collect List of EmployeeName
+	    List<String> empListName = map.keySet().stream().map(val -> val.empName).collect(Collectors.toList());
+	    System.out.println("EmpList :"+empListName);
+	    
+	    //Print EmployeeName List using forEach
+		map.keySet().stream().map(val -> val.empName).forEach(System.out::println);
 		
+		//Convert int array using java 8 feature IntStream.of(arr).boxed().Collect(Collectors.toList());
+		int arr[] = {12,59,56,35,45,75,35,97};
+		List<Integer> arrList = IntStream.of(arr).sorted().distinct().boxed().collect(Collectors.toList());
+		System.out.println("arrList :"+arrList);
 		
-
 	}
-
 }

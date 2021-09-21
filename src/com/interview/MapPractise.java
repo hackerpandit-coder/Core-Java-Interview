@@ -37,7 +37,5 @@ public class MapPractise {
 		//For key and value iteration using java 8
 		map.forEach((k,v) -> System.out.println("Key :"+k+":"+v));
 		
-		
 	}
-
 }

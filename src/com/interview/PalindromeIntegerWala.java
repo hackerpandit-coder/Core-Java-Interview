@@ -26,7 +26,6 @@ public class PalindromeIntegerWala {
 		else {
 			System.out.println(sum+" is not palindrome...");
 		}
-
 	}
 
 }

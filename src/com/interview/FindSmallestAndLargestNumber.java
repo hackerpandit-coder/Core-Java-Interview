@@ -21,5 +21,4 @@ public class FindSmallestAndLargestNumber {
 		System.out.println("Largest Number : "+list.get(list.size()-1));
 
 	}
-
 }

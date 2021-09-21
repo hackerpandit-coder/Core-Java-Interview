@@ -22,10 +22,8 @@ public class ComparatorTesting {
 
 				if (o1.getRam() > o2.getRam())
 					return -1;
-
 				else
 					return 1;
-
 			}
 		};
 		
@@ -33,9 +31,7 @@ public class ComparatorTesting {
 		for(LaptopModelClasss o : list) {
 			System.out.println(o);
 		}
-
 	}
-
 }
 
 class LaptopModelClasss {
